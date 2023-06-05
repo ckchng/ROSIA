@@ -23,9 +23,8 @@ Hyperparamters:
 2) dist_thres - (in degrees) parameters to decide which stars are too close to be considered as separate stars. 
 3) k - the number of closest distances to constraint each star, k = 2 is the triplet constraint as proposed in the paper.
 
-Format of the pre-processed catalog.
-1 2 3     4         5       6    7 \n
-x y z magnitude HIP index  CD1  CD2
+Format of the pre-processed catalog.   
+x y z Magnitude HIP index  CD1  CD2
 
 x,y,z - the star vectors in the inertia's coordinates
 CD1 - closest angular distance
@@ -35,7 +34,6 @@ To create testing data:
 ./create_onboard_dataset.sh
 
 Format of the testing data ('scene_id.txt')
-1 2 3     4        5     
 x y z magnitude HIP index
 
 x,y,z - the star vectors in the camera's coordinates
@@ -59,11 +57,10 @@ Hyperparamters:
 
 Format of the output text files.
 
-lines 1 to N-3
-1 2 3     4 
-x y z HIP index
+lines 1 to N-3  
+x y z HIP index  
 
-lines N-3 to N
+lines N-3 to N  
 The (estimated) 3x3 rotation matrix that rotates the testing star vectors into catalog's inertia's coordinates.
 
 
@@ -71,10 +68,8 @@ To run the multi-pole Star-ID algorithm [1][2]. Note that the implementation doe
 
 ./MPA.sh
 
-Format of the output text files.
-1 2 3     4 
-x y z HIP index
-
+Format of the output text files.  
+x y z HIP index  
 
 [1] Schiattarella, Vincenzo, Dario Spiller, and Fabio Curti. "A novel star identification technique robust to high presence of false objects: The Multi-Poles Algorithm." Advances in Space Research 59.8 (2017): 2133-2147.
 [2] https://www.gaussteam.com/wordpress/wp-content/uploads/2018/02/IAA-AAS-CU-17-05-02-Schiattarella.pdf
