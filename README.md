@@ -13,6 +13,7 @@ To install:
 mkdir build
 cd build
 cmake ..
+make
 
 To create specific onboard catalog:
 ./create_onboard_dataset.sh
@@ -52,5 +53,7 @@ To run ROSIA:
 Hyperparamters:
 1) dist_th - angular distance threshold (radians) to facilitate angular uncertainty of the star vectors.
 2) mag_th - magnitude threshold (magnitude) to facilitate magnitude uncertainty of the stars.
+
+Format of the output text files.
 
 
