@@ -34,11 +34,14 @@ CD2 - second closest angular distance
 To create testing data:
 ./create_onboard_dataset.sh
 
-Format of the testing data.
+Format of the testing data ('scene_id.txt')
 1 2 3     4        5     
 x y z magnitude HIP index
 
 x,y,z - the star vectors in the camera's coordinates
+
+('rot.txt')
+The 3x3 rotation matrix that rotates the testing star vectors into catalog's inertia's coordinates.
 
 Hyperparamters:
 1) dist_noise_sigma - the sigma of the angular distance noise.
@@ -55,5 +58,13 @@ Hyperparamters:
 2) mag_th - magnitude threshold (magnitude) to facilitate magnitude uncertainty of the stars.
 
 Format of the output text files.
+
+lines 1 to N-3
+1 2 3     4 
+x y z HIP index
+
+lines N-3 to N
+The 3x3 rotation matrix that rotates the testing star vectors into catalog's inertia's coordinates.
+
 
 
