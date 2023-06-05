@@ -64,7 +64,19 @@ lines 1 to N-3
 x y z HIP index
 
 lines N-3 to N
-The 3x3 rotation matrix that rotates the testing star vectors into catalog's inertia's coordinates.
+The (estimated) 3x3 rotation matrix that rotates the testing star vectors into catalog's inertia's coordinates.
 
+
+To run the multi-pole Star-ID algorithm [1][2]. Note that the implementation doesn't utilise the k-vector technique, hence it is much slower than the actual algorithm. However, the ID results are not affected. 
+
+./MPA.sh
+
+Format of the output text files.
+1 2 3     4 
+x y z HIP index
+
+
+[1] Schiattarella, Vincenzo, Dario Spiller, and Fabio Curti. "A novel star identification technique robust to high presence of false objects: The Multi-Poles Algorithm." Advances in Space Research 59.8 (2017): 2133-2147.
+[2] https://www.gaussteam.com/wordpress/wp-content/uploads/2018/02/IAA-AAS-CU-17-05-02-Schiattarella.pdf
 
 
