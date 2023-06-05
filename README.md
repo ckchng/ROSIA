@@ -24,7 +24,7 @@ Hyperparamters:
 3) k - the number of closest distances to constraint each star, k = 2 is the triplet constraint as proposed in the paper.
 
 Format of the pre-processed catalog.
-1 2 3     4         5       6    7
+1 2 3     4         5       6    7 \n
 x y z magnitude HIP index  CD1  CD2
 
 x,y,z - the star vectors in the inertia's coordinates
