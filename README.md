@@ -2,20 +2,19 @@
 
 The implementation of ROSIA: Rotation-Search-Based Star Identification Algorithm. ROSIA is built on top of the source code obtained from https://cs.adelaide.edu.au/~aparra/project/pcr/, which is an implementation of the paper "Parra Bustos, Alvaro, Tat-Jun Chin, and David Suter. "Fast rotation search with stereographic projections for 3d registration." Proceedings of the IEEE conference on computer vision and pattern recognition. 2014."
 
-Prerequsites:
+Prerequsites:  
 CMAKE  
 g++  
 Python3  
 numba (optional) < To speed up operations. Comment out line 3 and 23 in 'catalog_preprocessing.py' if this library is not installed.  
 
-To install:
-
+To install:    
 mkdir build
 cd build
 cmake ..
 make
 
-To create specific onboard catalog:
+To create specific onboard catalog:  
 ./create_onboard_dataset.sh
 
 Hyperparamters:
@@ -23,23 +22,26 @@ Hyperparamters:
 2) dist_thres - (in degrees) parameters to decide which stars are too close to be considered as separate stars. 
 3) k - the number of closest distances to constraint each star, k = 2 is the triplet constraint as proposed in the paper.
 
-Format of the pre-processed catalog.   
+Format of the pre-processed catalog:  
 x y z Magnitude HIP index  CD1  CD2
 
-x,y,z - the star vectors in the inertia's coordinates
+Legends:  
+x,y,z - the star vectors in the inertia's coordinates  
+HIP index - the ID of stars in the HIPPARCOS catalog
 CD1 - closest angular distance
 CD2 - second closest angular distance
 
-To create testing data:
+To create testing data:    
 ./create_onboard_dataset.sh
 
-Format of the testing data ('scene_id.txt')
-x y z magnitude HIP index
+Format of the testing data ('scene_id.txt'):    
+x y z Magnitude HIP index  
 
+Legends:    
 x,y,z - the star vectors in the camera's coordinates
 
-('rot.txt')
-The 3x3 rotation matrix that rotates the testing star vectors into catalog's inertia's coordinates.
+Format of the testing data ('rot.txt')    
+The 3x3 rotation matrix that rotates the testing star vectors into catalog's inertia's coordinates.  
 
 Hyperparamters:
 1) dist_noise_sigma - the sigma of the angular distance noise.
@@ -48,27 +50,26 @@ Hyperparamters:
 4) num_scenes - number of scenes to be generated.
 5) hip_catalog_filename - the directory of the original hipparcos catalog file.
 
-To run ROSIA:
+To run ROSIA:  
 ./demo.sh 
 
-Hyperparamters:
+Hyperparamters:  
 1) dist_th - angular distance threshold (radians) to facilitate angular uncertainty of the star vectors.
 2) mag_th - magnitude threshold (magnitude) to facilitate magnitude uncertainty of the stars.
 
-Format of the output text files.
+Format of the output text files:  
+lines 1 to N-3    
+x y z HIP index    
 
-lines 1 to N-3  
-x y z HIP index  
-
-lines N-3 to N  
-The (estimated) 3x3 rotation matrix that rotates the testing star vectors into catalog's inertia's coordinates.
+lines N-3 to N    
+The (estimated) 3x3 rotation matrix that rotates the testing star vectors into catalog's inertia's coordinates.  
 
 
-To run the multi-pole Star-ID algorithm [1][2]. Note that the implementation doesn't utilise the k-vector technique, hence it is much slower than the actual algorithm. However, the ID results are not affected. 
+To run the multi-pole Star-ID algorithm [1][2]. Note that the implementation doesn't utilise the k-vector technique, hence it is much slower than the actual algorithm. However, the ID results are not affected.   
 
 ./MPA.sh
 
-Format of the output text files.  
+Format of the output text files.    
 x y z HIP index  
 
 [1] Schiattarella, Vincenzo, Dario Spiller, and Fabio Curti. "A novel star identification technique robust to high presence of false objects: The Multi-Poles Algorithm." Advances in Space Research 59.8 (2017): 2133-2147.
