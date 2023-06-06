@@ -1,12 +1,12 @@
 # ROSIA
 
-The implementation of ROSIA: Rotation-Search-Based Star Identification Algorithm
+The implementation of ROSIA: Rotation-Search-Based Star Identification Algorithm. ROSIA is built on top of the source code obtained from https://cs.adelaide.edu.au/~aparra/project/pcr/, which is an implementation of the paper "Parra Bustos, Alvaro, Tat-Jun Chin, and David Suter. "Fast rotation search with stereographic projections for 3d registration." Proceedings of the IEEE conference on computer vision and pattern recognition. 2014."
 
 Prerequsites:
-CMAKE
-g++
-Python3
-numba (optional) < To speed up operations. Comment out line 3 and 23 in 'catalog_preprocessing.py' if this library is not installed.
+CMAKE  
+g++  
+Python3  
+numba (optional) < To speed up operations. Comment out line 3 and 23 in 'catalog_preprocessing.py' if this library is not installed.  
 
 To install:
 
