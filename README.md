@@ -75,14 +75,14 @@ x y z HIP index
 If you use this code, please cite us. Thanks!
 
 @article{chng2023rosia,
-  title={ROSIA: Rotation-Search-Based Star Identification Algorithm},
-  author={Chng, Chee-Kheng and Bustos, {\'A}lvaro Parra and McCarthy, Benjamin and Chin, Tat-Jun},
-  journal={IEEE Transactions on Aerospace and Electronic Systems},
-  volume={59},
-  number={5},
-  pages={6469--6484},
-  year={2023},
-  publisher={IEEE}
+  title={ROSIA: Rotation-Search-Based Star Identification Algorithm}, 
+  author={Chng, Chee-Kheng and Bustos, {\'A}lvaro Parra and McCarthy, Benjamin and Chin, Tat-Jun}, 
+  journal={IEEE Transactions on Aerospace and Electronic Systems}, 
+  volume={59}, 
+  number={5}, 
+  pages={6469--6484}, 
+  year={2023}, 
+  publisher={IEEE} 
 }
 
 [1] Schiattarella, Vincenzo, Dario Spiller, and Fabio Curti. "A novel star identification technique robust to high presence of false objects: The Multi-Poles Algorithm." Advances in Space Research 59.8 (2017): 2133-2147.
