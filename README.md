@@ -72,8 +72,13 @@ To run the multi-pole Star-ID algorithm [1][2]. Note that the implementation doe
 Format of the output text files.    
 x y z HIP index  
 
+
+[1] Schiattarella, Vincenzo, Dario Spiller, and Fabio Curti. "A novel star identification technique robust to high presence of false objects: The Multi-Poles Algorithm." Advances in Space Research 59.8 (2017): 2133-2147.
+[2] https://www.gaussteam.com/wordpress/wp-content/uploads/2018/02/IAA-AAS-CU-17-05-02-Schiattarella.pdf
+
 If you use this code, please cite us. Thanks!
 
+```bibtex
 @article{chng2023rosia,
   title={ROSIA: Rotation-Search-Based Star Identification Algorithm}, 
   author={Chng, Chee-Kheng and Bustos, {\'A}lvaro Parra and McCarthy, Benjamin and Chin, Tat-Jun}, 
@@ -85,7 +90,6 @@ If you use this code, please cite us. Thanks!
   publisher={IEEE} 
 }
 
-[1] Schiattarella, Vincenzo, Dario Spiller, and Fabio Curti. "A novel star identification technique robust to high presence of false objects: The Multi-Poles Algorithm." Advances in Space Research 59.8 (2017): 2133-2147.
-[2] https://www.gaussteam.com/wordpress/wp-content/uploads/2018/02/IAA-AAS-CU-17-05-02-Schiattarella.pdf
+
 
 
