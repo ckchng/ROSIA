@@ -73,10 +73,12 @@ Format of the output text files.
 x y z HIP index  
 
 
-[1] Schiattarella, Vincenzo, Dario Spiller, and Fabio Curti. "A novel star identification technique robust to high presence of false objects: The Multi-Poles Algorithm." Advances in Space Research 59.8 (2017): 2133-2147.
-[2] https://www.gaussteam.com/wordpress/wp-content/uploads/2018/02/IAA-AAS-CU-17-05-02-Schiattarella.pdf
+[1] Schiattarella, Vincenzo, Dario Spiller, and Fabio Curti. "A novel star identification technique robust to high presence of false objects: The Multi-Poles Algorithm." Advances in Space Research 59.8 (2017): 2133-2147.  
+[2] https://www.gaussteam.com/wordpress/wp-content/uploads/2018/02/IAA-AAS-CU-17-05-02-Schiattarella.pdf  
 
-If you use this code, please cite us. Thanks!
+
+
+The code here is the implementation of the following publication. If you use any of the code above here, i.e., the MPA algorithm or ROSIA, please cite us. Thanks!
 
 ```bibtex
 @article{chng2023rosia,
