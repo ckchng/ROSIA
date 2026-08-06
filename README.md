@@ -1,5 +1,6 @@
 # ROSIA
-Author: Chee-Kheng Chng
+Author: Chee-Kheng Chng 
+
 The implementation of ROSIA: Rotation-Search-Based Star Identification Algorithm. ROSIA is built on top of the source code obtained from https://cs.adelaide.edu.au/~aparra/project/pcr/, which is an implementation of the paper "Parra Bustos, Alvaro, Tat-Jun Chin, and David Suter. "Fast rotation search with stereographic projections for 3d registration." Proceedings of the IEEE conference on computer vision and pattern recognition. 2014."
 
 Prerequsites:  
